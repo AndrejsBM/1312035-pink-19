@@ -8,7 +8,7 @@
 
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="75" height="22" alt="Логотип приложения «‎Pink»">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип приложения «‎Pink»">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -41,7 +41,7 @@
           <li class="photo-list__item">
             <figure class="photo-list__image">
               <a href="#" class="photo-list__link">
-                <img src="https://via.placeholder.com/150x150" width="320" height="127" alt="Панорама дня">
+                <img src="https://via.placeholder.com/320x127" width="320" height="127" alt="Панорама дня">
               </a>
               <figcaption class="photo-list__label">
                 <p class="photo-list__text">
@@ -56,7 +56,7 @@
           <li class="photo-list__item">
             <figure class="photo-list__image">
               <a href="#" class="photo-list__link">
-                <img src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фотография пользователя 1">
+                <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя 1">
               </a>
               <figcaption class="photo-list__label">
                 <p class="photo-list__text">
@@ -71,7 +71,7 @@
           <li class="photo-list__item">
             <figure class="photo-list__image">
               <a href="#" class="photo-list__link">
-                <img src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фотография пользователя 2">
+                <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя 2">
               </a>
               <figcaption class="photo-list__label">
                 <p class="photo-list__text">
@@ -86,7 +86,7 @@
           <li class="photo-list__item">
             <figure class="photo-list__image">
               <a href="#" class="photo-list__link">
-                <img src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фотография пользователя 3">
+                <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя 3">
               </a>
               <figcaption class="photo-list__label">
                 <p class="photo-list__text">
@@ -101,7 +101,7 @@
           <li class="photo-list__item">
             <figure class="photo-list__image">
               <a href="#" class="photo-list__link">
-                <img src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фотография пользователя 4">
+                <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя 4">
               </a>
               <figcaption class="photo-list__label">
                 <p class="photo-list__text">
@@ -116,7 +116,7 @@
           <li class="photo-list__item">
             <figure class="photo-list__image">
               <a href="#" class="photo-list__link">
-                <img src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фотография пользователя 5">
+                <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя 5">
               </a>
               <figcaption class="photo-list__label">
                 <p class="photo-list__text">
@@ -131,7 +131,7 @@
           <li class="photo-list__item">
             <figure class="photo-list__image">
               <a href="#" class="photo-list__link">
-                <img src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фотография пользователя 6">
+                <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография пользователя 6">
               </a>
               <figcaption class="photo-list__label">
                 <p class="photo-list__text">
@@ -145,11 +145,38 @@
           </li>
         </div>
       </section>
+
+      <section class="application">
+        <h2 class="visually-hidden">Загрузка фотографии</h2>
+        <p class="application__header">
+          Затмите их всех!
+          Выкладывайте всё, что накопилось в телефоне!
+        </p>
+        <form class="application__form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="application__wrapper">
+            <img src="https://via.placeholder.com/280x374" width="280" height="374" alt="Зимняя фотография">
+          </div>
+          <div class="application__controls">
+            <button class="application__control" type="button">Обрезать</button>
+            <button class="application__control" type="button">Заливка</button>
+            <button class="application__control" type="button">Контраст</button>
+          </div>
+          <div class="application__ranges">
+            <input class="application__range" type="range" name="crop" min="0" max="100">
+            <input class="application__range" type="range" name="fill" min="0" max="100">
+            <input class="application__range" type="range" name="contrast" min="0" max="100">
+          </div>
+          <div class="application__wrapper-buttons">
+            <button class="application__button" type="submit">Запостить</button>
+            <button class="application__button" type="button">Отмена</button>
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
-        <img src="https://via.placeholder.com/150x150" width="147" height="40" alt="Логотип приложения «‎Pink»">
+        <img src="https://via.placeholder.com/147x40" width="147" height="40" alt="Логотип приложения «‎Pink»">
       </a>
       <div class="page-footer__socials socials">
         <ul class="socials__list">

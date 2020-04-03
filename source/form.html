@@ -8,7 +8,7 @@
 
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="75" height="22" alt="Логотип приложения «‎Pink»">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип приложения «‎Pink»">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -33,11 +33,101 @@
 
     <main class="page-main">
       <h1 class="">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="page-main__header-text">
+        Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+      </p>
+      <section class="contest">
+        <h2 class="visually-hidden">Анкета участника конкурса</h2>
+        <form class="contest__form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="contest__user">
+            <legend class="visually-hidden">Информация об участнике</legend>
+            <p class="contest__user-wrapper">
+              <label class="contest__label" for="contest__user-surname">Фамилия:</label>
+              <input class="contest__user-surname" type="text" name="user-surname" id="contest__user-surname" placeholder="Укажите фамилию*">
+            </p>
+            <p class="contest__user-wrapper">
+              <label class="contest__label" for="contest__user-name">Имя:</label>
+              <input class="contest__user-name" type="text" name="user-name" id="contest__user-name" placeholder="Введите ваше имя*">
+            </p>
+            <p class="contest__user-wrapper">
+              <label class="contest__label" for="contest__user-secondname">Отчество:</label>
+              <input class="contest__user-secondname" type="text" name="user-secondname" id="contest__user-secondname" placeholder="Ну и отчество тоже">
+            </p>
+          </fieldset>
+          <fieldset class="contest__achievements">
+            <legend>Ваши безбашенные достижения в путешествии</legend>
+              <ul class="contest__achievements-list">
+                <li class="contest__achievements-item">
+                  <input class="contest__achievements-value" type="checkbox" id="contest__achievements-value-1" name="achievement-1" value="contest__achievements-value-1" checked>
+                  <label for="contest__achievements-value-1" class="contest__achievements-label">Сделал селфи с акулой</label>
+                </li>
+                <li class="contest__achievements-item">
+                  <input class="contest__achievements-value" type="checkbox" id="contest__achievements-value-2" name="achievement-2" checked value="contest__achievements-value-2">
+                  <label for="contest__achievements-value-2" class="contest__achievements-label">Обгорел на пляже</label>
+                </li>
+                <li class="contest__achievements-item">
+                  <input class="contest__achievements-value" type="checkbox" id="contest__achievements-value-3" name="achievement-3" value="contest__achievements-value-3">
+                  <label for="contest__achievements-value-3" class="contest__achievements-label">Видел Чака Норриса</label>
+                </li>
+                <li class="contest__achievements-item">
+                  <input class="contest__achievements-value" type="checkbox" id="contest__achievements-value-4" name="achievement-4" value="contest__achievements-value-4">
+                  <label for="contest__achievements-value-4" class="contest__achievements-label">Накупил сувениров</label>
+                </li>
+                <li class="contest__achievements-item">
+                  <input class="contest__achievements-value" type="checkbox" id="contest__achievements-value-5" name="achievement-5" checked value="contest__achievements-value-5">
+                  <label for="contest__achievements-value-5" class="contest__achievements-label">Удержал башню</label>
+                </li>
+                <li class="contest__achievements-item">
+                  <input class="contest__achievements-value" type="checkbox" id="contest__achievements-value-6" name="achievement-6" value="contest__achievements-value-6">
+                  <label for="contest__achievements-value-6" class="contest__achievements-label">Разгромил отель</label>
+                </li>
+              </ul>
+          </fieldset>
+          <fieldset class="contest__contacts">
+            <legend class="visually-hidden">Укажите контактную информацию</legend>
+            <p class="contest__contacts-wrapper">
+              <label for="user-phone" class="contest__contacts-label">Номер телефона</label>
+              <input class="contest__contacts-phone" type="tel" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
+            </p>
+            <p class="contest__contacts-wrapper">
+              <label for="user-email" class="contest__contacts-label">Адрес почты</label>
+              <input class="contest__contacts-email" type="email" id="user-email" name="user-email" placeholder="Введите почту*" required>
+            </p>
+          </fieldset>
+          <fieldset class="contest__application">
+            <legend>С каким приложением путешествовали?</legend>
+            <ul class="contest__apllication-list">
+              <li class="contest__apllication-item">
+                <input class="contest__application-value" type="radio" name="application-type" id="contest__application-value-1" value="contest__application-value-1" checked>
+                <label for="contest__application-value-1">Pink для iOS</label>
+              </li>
+              <li class="contest__apllication-item">
+                <input class="contest__application-value" type="radio" name="application-type" id="contest__application-value-2" value="contest__application-value-2">
+                <label for="contest__application-value-2">Pink на Android</label>
+              </li>
+              <li class="contest__apllication-item">
+                <input class="contest__application-value" type="radio" name="application-type" id="contest__application-value-3" value="contest__application-value-3">
+                <label for="contest__application-value-3">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contest__comment">
+            <p class="contest__comment-wrapper">
+              <label for="comment-text" class="contest__comment-label">Опишите свои эмоции</label>
+              <textarea type="text" name="comment-text" id="comment-text" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5" cols="15"></textarea>
+            </p>
+          </fieldset>
+          <button type="submit" class="contest__button">Отправить форму</button>
+          <p class="contest__required-fields">
+            * — обязательные поля
+          </p>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
-        <img src="https://via.placeholder.com/150x150" width="147" height="40" alt="Логотип приложения «‎Pink»">
+        <img src="https://via.placeholder.com/147x40" width="147" height="40" alt="Логотип приложения «‎Pink»">
       </a>
       <div class="page-footer__socials socials">
         <ul class="socials__list">
