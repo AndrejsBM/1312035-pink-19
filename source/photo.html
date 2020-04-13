@@ -181,26 +181,26 @@
       <section class="application">
         <h2 class="visually-hidden">Загрузка фотографии</h2>
         <p class="application__header">
-          Затмите их всех!
+          Затмите их всех!<br>
           Выкладывайте всё, что накопилось в телефоне!
         </p>
         <form class="application__form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="application__wrapper">
-            <img src="https://via.placeholder.com/280x374" width="280" height="374" alt="Зимняя фотография">
+            <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Зимняя фотография">
           </div>
-          <div class="application__controls">
-            <button class="application__control" type="button">Обрезать</button>
-            <button class="application__control" type="button">Заливка</button>
-            <button class="application__control" type="button">Контраст</button>
+          <div class="application__icons">
+            <label class="application__icon application__icon-crop" for="crop">Обрезать</label>
+            <label class="application__icon application__icon--fill" for="fill">Заливка</label>
+            <label class="application__icon application__icon--contrast" for="contrast">Контраст</label>
           </div>
           <div class="application__ranges">
-            <input class="application__range" type="range" name="crop" min="0" max="100">
-            <input class="application__range" type="range" name="fill" min="0" max="100">
-            <input class="application__range" type="range" name="contrast" min="0" max="100">
+            <input class="application__range" type="range" id="crop" name="crop" min="0" max="100">
+            <input class="application__range" type="range" id="fill" name="fill" min="0" max="100">
+            <input class="application__range" type="range" id="contrast" name="contrast" min="0" max="100">
           </div>
           <div class="application__wrapper-buttons">
-            <button class="application__button" type="submit">Запостить</button>
-            <button class="application__button" type="reset">Отмена</button>
+            <button class="application__button application__button--submit" type="submit">Запостить</button>
+            <button class="application__button application__button--reset" type="reset">Отмена</button>
           </div>
         </form>
       </section>
