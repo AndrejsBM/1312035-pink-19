@@ -1,0 +1,39 @@
+.slider {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.slider__toggles {
+  padding: 0;
+  margin: 25px 0;
+}
+
+.slider__toggle {
+  margin: 0 7px;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: @blue-text;
+  opacity: 0.3;
+  border-radius: 50%;
+  border: none;
+}
+
+.slider__toggle--active {
+  box-sizing: content-box;
+  opacity: 1;
+  border: 3px solid @blue-text;
+  background-color: @white-text;
+  border-radius: 50%;
+}
+
+.slider__item {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slider__item--active {
+  display: block;
+}
