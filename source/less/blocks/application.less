@@ -1,13 +1,14 @@
 .application {
   margin: 0 auto;
   margin-bottom: 30px;
+  background-color: @white-text;
 }
 
 .application__header {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 18px;
   padding-right: 20px;
-  padding-top: 40px;
+  padding-top: 35px;
   padding-bottom: 41px;
   line-height: 30px;
   text-align: center;
@@ -20,6 +21,13 @@
   background-color: @white-bg;
 }
 
+.application__ranges {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+
 .application__wrapper-buttons {
   margin: 0;
   padding-top: 38px;
@@ -28,7 +36,6 @@
   padding-bottom: 0;
   font-size: 18px;
   line-height: 18px;
-  font-weight: 700;
 }
 
 .application__button--submit {
@@ -36,6 +43,8 @@
   margin-bottom: 11px;
   padding-top: 14px;
   padding-bottom: 18px;
+  font-weight: 700;
+  line-height: 18px;
   border: 3px solid @pink-text;
   border-radius: 30px;
   color: @pink-text;
@@ -45,8 +54,112 @@
   width: 280px;
   padding-top: 14px;
   padding-bottom: 18px;
+  font-weight: 700;
+  line-height: 18px;
   border: 3px solid @blue-text;
   border-radius: 30px;
   color: @blue-text;
   opacity: 0.1;
+}
+
+@media (min-width: @tablet-width) {
+  .application__header {
+    padding-top: 45px;
+    padding-bottom: 69px;
+    font-size: 18px;
+  }
+
+  .application__form {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    width: 610px;
+    min-height: 400px;
+  }
+
+  .application__ranges {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+  }
+
+  .application__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 265px;
+  }
+
+  .application__wrapper-image {
+    margin: 0;
+    display: flex;
+    width: 300px;
+    height: 400px;
+  }
+
+  .application__wrapper-buttons {
+    padding-top: 0;
+  }
+
+  .application__button--submit {
+    width: 260px;
+  }
+
+  .application__button--reset {
+    width: 260px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .application__header {
+    padding-top: 3px;
+    padding-bottom: 66px;
+    font-size: 18px;
+  }
+
+  .application__form {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 940px;
+  }
+
+  .application__wrapper-image {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .application__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .application__wrapper-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .application__button--submit {
+    width: 180px;
+    margin-bottom: 11px;
+    padding-top: 14px;
+    padding-bottom: 18px;
+    border: 3px solid @pink-text;
+    border-radius: 30px;
+    color: @pink-text;
+  }
+
+  .application__button--reset {
+    width: 190px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 3px solid @blue-text;
+    border-radius: 30px;
+    color: @blue-text;
+    opacity: 0.1;
+  }
 }

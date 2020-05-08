@@ -1,0 +1,73 @@
+
+.application-radio {
+  padding-bottom: 32px;
+  border: none;
+  background-color: @white-bg;
+}
+
+.application-radio__input {
+  display: none;
+}
+
+.application-radio__input:checked + .application-radio__label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: @pink-text;
+}
+
+.application-radio__label {
+  position: relative;
+  padding-left: 69px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    bottom: 50%;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    transform: translateY(50%);
+    background-color: @white-text;
+    border: 2px solid @grey-light;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .application-radio {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 54px;
+    padding-bottom: 59px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    border: 2px solid @grey-light;
+    background-color: @white-text;
+    order: 2;
+  }
+
+  .application-radio__input:checked + .application-radio__label::after {
+    left: 22px;
+  }
+
+  .application-radio__label {
+    &::before {
+      left: 10px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .application-radio {
+    margin: 0;
+    padding-bottom: 0;
+    min-width: 432px;
+  }
+}

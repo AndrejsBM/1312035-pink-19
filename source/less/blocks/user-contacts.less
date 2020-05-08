@@ -1,0 +1,120 @@
+.user-contacts {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 42px;
+  border-style: none;
+}
+
+.user-contacts__item {
+  margin: 0;
+  padding: 0;
+}
+
+.user-contacts__label {
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 5px;
+  padding-left: 23px;
+  text-align: left;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @pink-text;
+}
+
+.user-contacts__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid @grey-light;
+}
+
+.user-contacts__input::placeholder {
+  color: @black-text;
+}
+
+@media (min-width: @tablet-width) {
+  .user-contacts {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 54px;
+    padding-bottom: 6px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: auto;
+    order: 3;
+    border: 2px solid @grey-light;
+  }
+
+  .user-contacts__item {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 0;
+    margin-top: 35px;
+
+    &--email {
+      margin-top: 10px;
+    }
+  }
+
+  .user-contacts__label {
+    padding: 0;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .user-contacts__input {
+    padding-left: 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-contacts {
+    margin: 0;
+    padding: 0;
+    width: 940px;
+  }
+
+  .user-contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-contacts__item {
+    width: 375px;
+
+    &--phone {
+      margin: 0;
+      margin-top: 31px;
+      margin-left: 58px;
+      margin-right: 10px;
+    }
+
+    &--email {
+      margin: 0;
+      margin-top: 31px;
+      margin-left: 10px;
+      margin-right: 59px;
+    }
+  }
+
+  .user-contacts__input {
+    padding-top: 14px;
+    padding-left: 19px;
+  }
+
+  .user-contacts__label {
+    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+  }
+}

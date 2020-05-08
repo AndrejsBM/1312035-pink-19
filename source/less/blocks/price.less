@@ -5,13 +5,27 @@
 .price__wrapper {
   padding: 0;
   margin: 0;
-  padding-top: 104px;
   width: 100%;
   overflow: hidden;
 }
 
 .price__toggles {
+  .list-reset;
+  padding-top: 32px;
+  padding-bottom: 42px;
   text-align: center;
-  padding-top: 7px;
-  padding-bottom: 20px;
+}
+
+.price__bg-triangle {
+  fill: @white-text;
+}
+
+@media (min-width: @tablet-width) {
+  .price__toggles {
+    display: none;
+  }
+
+  .price__wrapper {
+    padding-bottom: 95px;
+  }
 }

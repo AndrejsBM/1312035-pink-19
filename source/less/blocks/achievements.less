@@ -1,0 +1,143 @@
+.achievements {
+  background-color: @white-bg;
+  padding-bottom: 0;
+  margin-bottom: 14px;
+}
+
+.achievements__list {
+  margin: 0;
+  padding: 0;
+  margin-top: 34px;
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 30px;
+  list-style: none;
+}
+
+.achievements__list-item {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 52px;
+  line-height: 30px;
+}
+
+.achievements__list-item:last-child {
+  padding-bottom: 33px;
+}
+
+.achievements__input {
+  display: none;
+}
+
+.achievements__input:checked + .achievements__label::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  bottom: 50%;
+  width: 25px;
+  height: 16px;
+  background-image: url("/img/icon-yes.svg");
+  background-repeat: no-repeat;
+  transform: translateY(50%);
+}
+
+.achievements__label {
+  position: relative;
+  padding-left: 69px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    bottom: -8px;
+    width: 39px;
+    height: 39px;
+    background-color: @white-text;
+    border: 2px solid @grey-light;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .achievements {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 54px;
+    padding-bottom: 6px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: auto;
+    border: 2px solid @grey-light;
+    background-color: @white-text;
+    order: 4;
+  }
+
+  .achievements__list {
+    padding-top: 11px;
+  }
+
+  .achievements__list-item {
+    margin-left: 57px;
+  }
+
+  .achievements__label {
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .achievements {
+    flex-grow: 0;
+    flex-wrap: wrap;
+    margin-top: 55px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 54px;
+    padding-bottom: 0;
+    width: 940px;
+  }
+
+  .achievements__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 936px;
+    min-height: 216px;
+  }
+
+  .achievements__list-item {
+    margin: 0;
+    padding: 0;
+    margin-left: 58px;
+    margin-right: 45px;
+    padding-bottom: 0;
+    width: 200px;
+
+    &:nth-child(2n) {
+      margin-bottom: 8px;
+      order: 2;
+    }
+
+    &:nth-child(2n+1) {
+      margin-top: 45px;
+      order: 1;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 36px;
+      margin-left: 71px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 23px;
+      margin-left: 71px;
+    }
+  }
+
+  .achievements__list-item:last-child {
+    padding-bottom: 0;
+  }
+}

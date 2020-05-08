@@ -1,0 +1,88 @@
+.user-comment {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 42px;
+  border-style: none;
+}
+
+.user-comment__item {
+  margin: 0;
+  padding: 0;
+}
+
+.user-comment__label {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 11px;
+  padding-right: 2px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @pink-text;
+}
+
+.user-comment__input {
+  padding-top: 15px;
+  padding-left: 17px;
+  padding-right: 9px;
+  line-height: 30px;
+  font-size: 18px;
+  min-height: 182px;
+}
+
+.user-comment__input::placeholder {
+  color: @black-text;
+}
+
+@media (min-width: @tablet-width) {
+  .user-comment {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 65px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    border: 2px solid @grey-light;
+    order: 5;
+  }
+
+  .user-comment__item {
+    margin: 0;
+    padding: 0;
+    padding-top: 29px;
+  }
+
+  .user-comment__label {
+    display: none;
+  }
+
+  .user-comment__input {
+    padding-left: 19px;
+    padding-right: 10px;
+    padding-bottom: 0;
+    width: 467px;
+    min-height: 176px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-comment {
+    margin: 0 auto;
+    padding-bottom: 37px;
+    width: 100%;
+  }
+
+  .user-comment__input {
+    padding-left: 17px;
+    padding-right: 10px;
+    padding-bottom: 0;
+    width: 788px;
+    min-height: 110px;
+  }
+
+  .user-comment__item {
+    padding-top: 27px;
+  }
+}
+
