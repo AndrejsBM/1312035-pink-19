@@ -7,6 +7,7 @@
 
 .application-radio__input {
   display: none;
+  pointer-events: none;
 }
 
 .application-radio__input:checked + .application-radio__label::after {
@@ -23,6 +24,7 @@
 .application-radio__label {
   position: relative;
   padding-left: 69px;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -68,6 +70,7 @@
   .application-radio {
     margin: 0;
     padding-bottom: 0;
+    flex-direction: column;
     min-width: 432px;
   }
 }
