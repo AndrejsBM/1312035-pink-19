@@ -6,7 +6,7 @@
 
 .slider__toggles {
   padding: 0;
-  padding-top: 25px;
+  padding-top: 24px;
   padding-bottom: 20px;
 }
 
@@ -15,10 +15,17 @@
   padding: 0;
   width: 6px;
   height: 6px;
-  background-color: @blue-text;
-  opacity: 0.3;
+  background-color: rgba(@blue-text, 0.3);
   border-radius: 50%;
   border: none;
+
+  &:hover:not(.slider__toggle--active) {
+    background-color: rgba(@blue-text, 0.6)
+  }
+
+  &:active:not(.slider__toggle--active) {
+    background-color: rgba(@blue-text, 0.1);
+  }
 }
 
 .slider__toggle--active {
@@ -38,6 +45,10 @@
   &--active {
     display: block;
   }
+
+  .slider__nav-arrow {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -54,7 +65,53 @@
 }
 
 @media (min-width: @desktop-width) {
-  .slider__toggles {
+  .slider__toggle {
     display: none;
+  }
+
+  .slider__nav-arrow {
+    display: inline;
+    fill: @blue-text;
+  }
+
+  .slider__toggles .slider__toggle--left {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    left: 353px;
+    top: 212px;
+    opacity: 0.3;
+    border: none;
+    background-color: @white-text;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .slider__toggles .slider__toggle--right {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    right: 353px;
+    top: 212px;
+    opacity: 0.3;
+    border: none;
+    background-color: @white-text;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }

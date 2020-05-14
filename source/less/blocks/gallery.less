@@ -1,5 +1,6 @@
 .gallery {
   background-color: @white-text;
+  width: auto;
 }
 
 .gallery-wrapper {
@@ -41,11 +42,15 @@
 }
 
 .gallery__figure {
+  position: relative;
   padding: 0;
-  margin: 0 auto;
-  width: 280px;
-  min-height: 302px;
-  background-color: @white-bg;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: stretch;
+  // min-height: 302px;
+  // background-color: @white-bg;
 
   &--panorame {
     margin-bottom: 20px;
@@ -57,8 +62,42 @@
   }
 }
 
-.gallery__photo--panorame {
-  width: 320px;
+.gallery__photo {
+  width: 280px;
+  height: 180px;
+
+  &--panorame {
+    width: 100%;
+    height: 137px;
+  }
+}
+
+.gallery__link {
+  .list-reset;
+  margin: 0 auto;
+  height: 180px;
+}
+
+.gallery__link--panorame {
+  height: 137px;
+
+  &::before {
+    position: absolute;
+    content: "панорама дня";
+    right: 20px;
+    top: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @white-text;
+    background-color: @pink-text;
+  }
 }
 
 .gallery__description {
@@ -76,7 +115,7 @@
 .gallery__title {
   margin: 0;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 18px;
   text-align: left;
 }
 
@@ -118,7 +157,7 @@
   margin: 0;
   padding: 0;
   margin-top: auto;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: flex-start;
 }
@@ -128,14 +167,22 @@
   margin: 0;
 }
 
+.gallery__heart-icon {
+  fill: @pink-text;
+}
+
 @media (min-width: @tablet-width) {
+  .gallery {
+    // margin-top: 80px;
+  }
+
   .gallery-wrapper {
     width: 660px;
   }
 
   .gallery__header {
     margin: 0 auto;
-    padding-top: 92px;
+    padding-top: 82px;
     padding-bottom: 75px;
     width: 440px;
     font-size: 18px;

@@ -18,10 +18,20 @@
   font-size: 18px;
   line-height: 30px;
   border: 2px solid @grey-light;
-}
 
-.user-info__input::placeholder {
-  color: @black-text;
+  &::placeholder {
+    color: @black-text;
+  }
+
+  &:hover {
+    border: 2px solid @blue-text;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid @pink-text;
+    outline: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
