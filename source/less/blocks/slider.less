@@ -45,10 +45,10 @@
   &--active {
     display: block;
   }
+}
 
-  .slider__nav-arrow {
-    display: none;
-  }
+.slider__toggle .slider__nav-arrow {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -60,7 +60,7 @@
   .slider__toggles {
     padding: 0;
     padding-top: 27px;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
   }
 }
 
@@ -72,6 +72,11 @@
   .slider__nav-arrow {
     display: inline;
     fill: @blue-text;
+  }
+
+  .slider__toggles {
+    padding: 0;
+    padding-bottom: 0;
   }
 
   .slider__toggles .slider__toggle--left {

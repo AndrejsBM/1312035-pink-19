@@ -1,0 +1,30 @@
+.range {
+  position: relative;
+  height: 50px;
+}
+/*
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 240px;
+    height: 2px;
+    color: @blue-text;
+    background-color: @blue-text;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 2px solid @pink-text;
+    border-radius: 50%;
+  }
+}
+*/
+.range__bar {
+  width: 240px;
+  height: 2px;
+  background-color: black;
+}

@@ -48,6 +48,16 @@
   font-weight: 300;
   text-decoration: none;
   color: @pink-text;
+
+  &:hover {
+    color: @blue-text;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+  }
 }
 
 .contacts__visit {
@@ -88,7 +98,7 @@
   width: 345px;
   height: 80px;
   transform: translateX(-50%);
-  z-index: 2;
+  z-index: 1;
   fill: @white-text;
 }
 
@@ -159,7 +169,7 @@
   }
 
   .contacts__background {
-    top: 6px;
+    top: -6px;
     width: 770px;
   }
 }
@@ -167,6 +177,7 @@
 @media (min-width: @desktop-width) {
   .contacts {
     margin: 0;
+    margin-bottom: 31px;
     width: 100%;
   }
 
@@ -234,5 +245,11 @@
     height: 523px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
     background-position: center -256px;
+  }
+
+  .contacts__background {
+    top: 0;
+    width: 1200px;
+    height: 124px;
   }
 }

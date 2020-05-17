@@ -47,14 +47,11 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: stretch;
-  // min-height: 302px;
-  // background-color: @white-bg;
 
   &--panorame {
     margin-bottom: 20px;
-    width: 320px;
   }
 
   &:last-child {
@@ -74,6 +71,7 @@
 
 .gallery__link {
   .list-reset;
+  line-height: 0;
   margin: 0 auto;
   height: 180px;
 }
@@ -172,17 +170,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .gallery {
-    // margin-top: 80px;
-  }
-
   .gallery-wrapper {
     width: 660px;
   }
 
   .gallery__header {
     margin: 0 auto;
-    padding-top: 82px;
+    padding-top: 92px;
     padding-bottom: 75px;
     width: 440px;
     font-size: 18px;
@@ -201,17 +195,15 @@
   }
 
   .gallery__figure {
-    padding: 0;
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 300px;
+    align-content: center;
     min-height: 455px;
     text-align: center;
-    background-color: @white-bg;
 
     &--panorame {
-      margin-bottom: 49px;
-      width: 660px;
+      margin-bottom: 51px;
+      min-height: 630px;
     }
   }
 
@@ -220,29 +212,45 @@
     height: 300px;
 
     &--panorame {
-      width: 660px;
+      width: 100%;
       height: 509px;
+    }
+  }
+
+  .gallery__link {
+    height: 300px;
+  }
+
+  .gallery__link--panorame {
+    height: 509px;
+
+    &::before {
+      top: 58px;
     }
   }
 
   .gallery__description {
     .list-reset;
-    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 10px;
     padding-left: 27px;
     padding-right: 13px;
-    width: 240px;
+    justify-content: space-between;
+    width: 258px;
     min-height: 145px;
     text-align: left;
     background-color: @white-bg;
 
     &--panorame {
       padding: 0;
-      margin: 0 auto;
-      padding-left: 20px;
+      padding-top: 5px;
+      padding-left: 28px;
+      padding-right: 19px;
+      margin-left: 20px;
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
-      width: 585px;
+      width: 574px;
       min-height: 115px;
     }
   }
@@ -252,37 +260,41 @@
 
     &--panorame {
       padding: 0;
-      margin-bottom: 25px;
-      width: 519px;
+      margin-bottom: 24px;
+      width: 520px;
       order: 2;
       text-align: left;
     }
   }
 
   .gallery__title {
-    margin-top: 18px;
+    margin-top: 13px;
+
+    &--panorame {
+      margin-top: 19px;
+    }
   }
 
   .gallery__button {
     order: 2;
-    margin-right: 0;
+    margin-right: 18px;
 
     &--panorame {
-      margin-right: 20px;
+      margin-right: 0;
     }
   }
 
   .gallery__rate {
     padding: 0;
     margin: 0;
-    margin-bottom: 19px;
+    margin-bottom: 22px;
     margin-top: auto;
     justify-content: space-between;
 
     &--panorame {
       margin-bottom: 0;
-      margin-top: 19px;
-      justify-content: space-between;
+      margin-top: 21px;
+      justify-content: space-around;
       width: 140px;
     }
   }
@@ -306,19 +318,24 @@
 
   .gallery__item {
     margin-bottom: 54px;
-    width: 300px;
     min-height: 556px;
+
+    &--panorame {
+      min-height: 602px;
+    }
   }
 
   .gallery__figure {
     padding: 0;
     margin: 0 auto;
+    min-height: 555px;
     text-align: center;
     background-color: @white-bg;
 
     &--panorame {
       margin-bottom: 49px;
       width: auto;
+      min-height: 602px;
       background-color: @white-text;
     }
   }
@@ -344,10 +361,24 @@
     &--panorame {
       padding: 0;
       margin: 0 auto;
+      padding-top: 5px;
       padding-left: 26px;
       padding-right: 26px;
       width: 885px;
       min-height: 90px;
+    }
+  }
+
+  .gallery__link {
+    height: 400px;
+
+    &--panorame {
+      height: 506px;
+
+      &::before {
+        right: 122px;
+        top: 54px;
+      }
     }
   }
 
@@ -361,8 +392,8 @@
 
     &--panorame {
       margin-bottom: 0;
-      margin-top: 18px;
-      width: 126px;
+      margin-top: 20px;
+      width: 130px;
     }
   }
 
@@ -370,11 +401,11 @@
     margin-right: 0;
 
     &--panorame {
-      margin-right: 4px;
+      margin-right: 0;
     }
   }
 
   .gallery__title {
-    margin-top: 16px;
+    margin-top: 18px;
   }
 }
