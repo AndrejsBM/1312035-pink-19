@@ -1,10 +1,36 @@
 .developer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   width: 130px;
 }
 
 .developer__text {
+  margin-right: 14px;
+  margin-top: 9px;
   line-height: 18px;
+}
+
+.developer__link {
+  margin-top: 4px;
+  fill: @pink-text;
+
+  &:hover {
+    fill: @blue-text;
+  }
+
+  &:active {
+    fill: rgba(@blue-text, 0.3);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .developer__text {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+
+  .developer__link {
+    margin-top: 0;
+  }
 }

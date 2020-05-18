@@ -1,14 +1,36 @@
 .research__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 660px;
   min-height: 278px;
   text-align: left;
 }
 
 .research__timer-icon {
-  padding-left: 20px;
+  margin-left: 21px;
+  fill: @grey-tmr;
+}
+
+.research__timer {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "24";
+    width: 174px;
+    height: 174px;
+    top: 55px;
+    left: 38px;
+    text-align: center;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 163px;
+    color: @pink-text;
+    border: 15px solid @pink-text;
+    border-radius: 50%;
+    z-index: 1;
+  }
 }
 
 .research__article {
@@ -17,6 +39,8 @@
 
 .research__tittle {
   .list-reset;
+  margin-top: 38px;
+  padding-bottom: 10px;
   width: 170px;
   font-size: 30px;
   font-weight: 700;
@@ -26,7 +50,7 @@
 
 .research__text {
   .list-reset;
-  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .research__link {
@@ -46,7 +70,8 @@
   }
 
   .research__tittle {
-    padding-top: 45px;
+    padding-top: 52px;
+    padding-bottom: 0;
     width: 298px;
   }
 
@@ -58,12 +83,24 @@
   }
 
   .research__timer-icon {
-    padding-left: 12px;
+    margin-left: 11px;
     width: 298px;
     height: 345px;
   }
 
   .research__link {
     font-size: 18px;
+  }
+
+  .research__timer {
+    &::before {
+      width: 222px;
+      height: 222px;
+      top: 69px;
+      left: 32px;
+      border: 16px solid @pink-text;
+      font-size: 120px;
+      line-height: 203px;
+    }
   }
 }

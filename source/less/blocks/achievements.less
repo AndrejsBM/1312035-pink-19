@@ -58,6 +58,14 @@
     background-color: @white-text;
     border: 2px solid @grey-light;
   }
+
+  &:hover::before {
+    border: 2px solid @blue-text;
+  }
+
+  &:active::before {
+    border: 2px solid @pink-text;
+  }
 }
 
 @media (min-width: @tablet-width) {

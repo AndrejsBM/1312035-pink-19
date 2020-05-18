@@ -1,0 +1,9 @@
+.developer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 130px;
+}
+.developer__text {
+  line-height: 18px;
+}

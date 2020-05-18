@@ -1,0 +1,87 @@
+.range {
+  position: relative;
+}
+
+.range__bar {
+  margin: 0 auto;
+  width: 240px;
+  height: 2px;
+  background-color: @blue-text;
+}
+
+.range__toggle {
+  position: absolute;
+  box-sizing: border-box;
+  left: 80%;
+  bottom: -6px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid @pink-text;
+  border-radius: 50%;
+  background-color: @white-bg;
+
+  &:active {
+    background-color: @pink-text;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .range__bar {
+    width: 202px;
+    margin-top: 34px;
+    margin-bottom: 37px;
+  }
+
+  .range__toggle {
+    bottom: 43%;
+  }
+
+  .range--crop .range__toggle {
+    left: 72%;
+  }
+
+  .range--fill .range__toggle {
+    left: 12%;
+  }
+
+  .range--contrast .range__toggle {
+    left: 48%;
+    bottom: 53%;
+  }
+
+  .range--contrast .range__bar {
+    margin-top: 31px;
+    margin-bottom: 49px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range__bar {
+    margin-right: 25px;
+    margin-bottom: 34px;
+    margin-top: 34px;
+    width: 288px;
+  }
+
+  .range--fill .range__bar {
+    margin-top: 38px;
+    margin-bottom: 37px;
+  }
+
+  .range--crop .range__toggle {
+    left: 23%;
+  }
+
+  .range--fill .range__toggle {
+    left: 79%;
+  }
+
+  .range--contrast .range__toggle {
+    left: 51%;
+    bottom: 53%;
+  }
+
+  .range__toggle {
+    bottom: 40%;
+  }
+}

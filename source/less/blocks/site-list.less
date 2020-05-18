@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 16px;
   padding-bottom: 14px;
+  width: 100%;
 
   &::after,
   &:first-child::before {
@@ -25,18 +26,27 @@
 
 .site-list__link {
   padding-top: 16px;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
   text-decoration: none;
   color: @white-text;
+
+  &:hover[href] {
+    color: @pink-text;
+  }
+
+  &:active[href] {
+    color: rgba(@white-text, 0.3);
+  }
 }
 
 @media (min-width: @desktop-width) {
   .site-list__item {
     padding-top: 15px;
     padding-bottom: 15px;
+    width: auto;
     box-shadow: none;
     text-transform: none;
 

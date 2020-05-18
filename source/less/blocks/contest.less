@@ -76,6 +76,16 @@
   color: @white-text;
   background-color: @green-bg;
   border: none;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: @green-btn;
+  }
+
+  &:active {
+    background-color: @green-btn;
+    color: rgba(@white-text, 0.3);
+  }
 }
 
 .contest__btn-wrapper {
@@ -87,7 +97,6 @@
   margin: 0;
   padding: 0;
   padding-top: 38px;
-
   text-transform: uppercase;
 }
 
@@ -107,6 +116,7 @@
   .contest__form {
     margin: 0 auto;
     margin-top: 69px;
+    margin-bottom: 49px;
     width: 660px;
     display: flex;
     justify-content: space-between;
@@ -162,16 +172,6 @@
 
   .contest__button {
     width: 300px;
-    border-radius: 2px;
-
-    &:hover {
-      background-color: @green-btn;
-    }
-
-    &:active {
-      background-color: @green-btn;
-      color: rgba(@white-text, 0.3);
-    }
   }
 
   .contest__required-fields {
@@ -186,7 +186,8 @@
 
 @media (min-width: @desktop-width) {
   .contest__form {
-    margin-top: 65px;
+    margin-top: 63px;
+    margin-bottom: 33px;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
