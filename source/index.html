@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="./js/svgxuse.js"></script>
   </head>
   <body>
 
@@ -136,20 +137,15 @@
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения «‎Pink»</h2>
+        <div class="advantages__text-wrapper">
+          <p class="advantages__text-slogan">
+            Устали от серости мегаполиса?
+          </p>
+          <p class="advantages__text-slogan">
+            Нам есть, что вам предложить!
+          </p>
+        </div>
         <div class="advantages__wrapper">
-          <div class="advantages__text-wrapper">
-            <p class="advantages__text-slogan">
-              Устали от серости мегаполиса?
-            </p>
-            <p class="advantages__text-slogan">
-              Нам есть, что вам предложить!
-            </p>
-          </div>
-          <a class="advantages__bg-triangle">
-            <svg viewBox="0 0 1200 94.074">
-              <polygon fill="ffffff" points="1200,0 0,0 0,94.074 "/>
-            </svg>
-          </a>
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__title">Поднимает настроение</h3>
@@ -157,7 +153,7 @@
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Заводит новых друзей</h3>
@@ -173,12 +169,11 @@
               </svg>
             </div>
             <div class="research__article">
-              <h3 class="research__tittle">Эффект на 24 часа!</h3>
+              <h3 class="research__tittle">Эффект на&nbsp;24 часа!</h3>
               <p class="research__text">
                 Британские учёные провели исследования
-                и доказали, что положительный эффект
-                от использования приложения длится
-                целые сутки!
+                и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится
+                целые&nbsp;сутки!
               </p>
               <a href="#" class="research__link">Узнать больше об исследовании</a>
             </div>
@@ -268,11 +263,6 @@
       <section class="price">
         <h2 class="visually-hidden">Цены на версии приложения «‎Pink»</h2>
         <div class="price__wrapper slider">
-          <a class="price__background">
-            <svg viewBox="0 0 1200 94.074">
-              <polygon fill="000000" points="1200,0 0,0 0,94.074 "/>
-            </svg>
-          </a>
           <table class="price__list tariff-list">
             <tr>
               <th class="tariff-list__header tariff-list__header--option">
@@ -435,9 +425,7 @@
             </div>
           </div>
           <div class="contacts__map map">
-            <svg class="contacts__background" width="595" height="62">
-              <use xlink:href="img/sprite.svg#bg-triangle-white-footer.svg"></use>
-            </svg>
+            <div class="contacts__background"></div>
             <a href="#" class="map__link">
               <img src="img/icon-map-marker.svg" class="map__point" width="36" height="35" alt="Адрес компании разработчиков приложения «‎Pink»: г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
             </a>

@@ -74,9 +74,6 @@
     margin-right: 20px;
     margin-bottom: 54px;
     padding-bottom: 6px;
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
     width: auto;
     border: 2px solid @grey-light;
     background-color: @white-text;
@@ -98,66 +95,52 @@
 
 @media (min-width: @desktop-width) {
   .achievements {
-    flex-grow: 0;
-    flex-wrap: wrap;
-    flex-direction: row;
+    padding: 0;
+    margin: 0;
     margin-top: 55px;
-    margin-bottom: 54px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-bottom: 30px;
-    padding-right: 0;
-    padding-top: 0;
+    margin-bottom: 53px;
+    min-height: 228px;
     width: 940px;
   }
 
   .achievements__list {
     padding: 0;
     margin: 0;
-    padding-left: 37px;
+    margin-right: 0;
+    padding-top: 30px;
+    padding-left: 58px;
+    padding-bottom: 17px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: baseline;
+    vertical-align: middle;
     flex-wrap: wrap;
     min-height: 170px;
-    margin-top: 17px;
   }
 
   .achievements__list-item {
-    margin-left: 0;
+    .list-reset;
+    margin: 0;
+    margin-top: 15px;
     padding-bottom: 0;
-    width: 260px;
 
     &:nth-child(2n) {
-      // margin-bottom: 8px;
       order: 2;
+      padding-bottom: 5px;
     }
 
     &:nth-child(2n+1) {
-      // margin-top: 45px;
       order: 1;
     }
 
-    &:nth-child(3n) {
-      // margin-right: 36px;
-      // margin-left: 65px;
-      // padding-right: 45px;
+    &--third {
+      margin-left: 57px;
+      margin-right: 53px;
     }
 
-    &:nth-child(5n) {
-      // margin-right: 36px;
-      // margin-left: 65px;
-      // padding-right: 0;
+    &--fourth {
+      margin-left: 95px;
+      margin-right: 63px;
     }
-
-    &:nth-child(6n) {
-      // margin-right: 20px;
-      // margin-left: 71px;
-      // padding-right: 0;
-    }
-  }
-
-  .achievements__list-item:last-child {
-    padding-bottom: 0;
   }
 }

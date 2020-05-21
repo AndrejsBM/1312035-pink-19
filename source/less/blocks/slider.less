@@ -69,6 +69,10 @@
     display: none;
   }
 
+  .slider__toggle .slider__nav-arrow {
+    display: inline;
+  }
+
   .slider__nav-arrow {
     display: inline;
     fill: @blue-text;
@@ -84,10 +88,12 @@
     position: absolute;
     width: 22px;
     height: 41px;
-    left: 353px;
-    top: 212px;
+    left: 104px;
+    top: 214px;
     opacity: 0.3;
     border: none;
+    border-radius: none;
+    background: transparent;
     background-color: @white-text;
 
     &:hover,
@@ -105,13 +111,15 @@
     position: absolute;
     width: 22px;
     height: 41px;
-    right: 353px;
-    top: 212px;
+    right: 103px;
+    top: 214px;
     opacity: 0.3;
     border: none;
+    background: transparent;
     background-color: @white-text;
 
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 0.6;
     }
 
