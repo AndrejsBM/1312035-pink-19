@@ -55,6 +55,11 @@
   background-color: @blue-text;
 }
 
+.main-nav__close-icon svg,
+.main-nav__menu-icon svg {
+  pointer-events: none;
+}
+
 .main-nav__close-icon,
 .main-nav__menu-icon {
   fill: #ffffff;
@@ -75,6 +80,11 @@
 
   .main-nav--closed .main-nav__toggle {
     top: -67px;
+  }
+
+  .main-nav__close-icon svg,
+  .main-nav__menu-icon svg {
+    pointer-events: none;
   }
 }
 
