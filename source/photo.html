@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="./js/picturefill.min.js" async></script>
     <script src="./js/svgxuse.min.js"></script>
   </head>
   <body>
@@ -102,11 +107,11 @@
           <p class="gallery__header">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           <figure class="gallery__figure gallery__figure--panorame">
             <a href="#" class="gallery__link gallery__link--panorame">
-              <img src="img/panorama-desktop@1x.jpg" class="gallery__photo gallery__photo--panorame" width="660" height="509" alt="Панорама дня">
-              <!--
-              <source media="(min-width:1200px)" srcset="./img/panorama-desktop@1x.jpg">
-              <source media="(min-width:660px)" srcset="./img/panorama-tablet@1x.jpg">
-              <img src="./img/panorama-mobile@1x.jpg" alt="Панорама дня" class="gallery__photo" width="100%";>-->
+              <picture>
+                <source media="(min-width:960px)" srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="./img/panorama-tablet@1x.jpg 1x, ./img/panorama-tablet@2x.jpg 2x">
+                <img src="./img/panorama-mobile@1x.jpg" srcset="./img/panorama-mobile@2x.jpg 2x" alt="Панорама дня" class="gallery__photo gallery__photo--panorame">
+              </picture>
             </a>
             <figcaption class="gallery__description gallery__description--panorame">
               <p class="gallery__title gallery__title--panorame">
@@ -130,7 +135,11 @@
             <li class="gallery__item">
               <figure class="gallery__figure">
                 <a href="#" class="gallery__link">
-                  <img src="img/photo-car-mobile@1x.jpg" class="gallery__photo" width="280" height="180" alt="Фотография пользователя 1">
+                  <picture>
+                    <source media="(min-width:960px)" srcset="./img/photo-car-desktop@1x.jpg 1x, ./img/photo-car-desktop@2x.jpg 2x">
+                    <source media="(min-width:660px)" srcset="./img/photo-car-tablet@1x.jpg 1x, ./img/photo-car-tablet@2x.jpg 2x">
+                    <img src="img/photo-car-mobile@1x.jpg" srcset="./img/photo-car-mobile@2x.jpg 2x" class="gallery__photo" alt="Фотография пользователя 1">
+                  </picture>
                 </a>
                 <figcaption class="gallery__description">
                   <p class="gallery__title">
@@ -154,7 +163,11 @@
             <li class="gallery__item">
               <figure class="gallery__figure">
                 <a href="#" class="gallery__link">
-                  <img src="img/photo-drumset-mobile@1x.jpg" class="gallery__photo" width="280" height="180" alt="Фотография пользователя 2">
+                  <picture>
+                    <source media="(min-width:960px)" srcset="./img/photo-drumset-desktop@1x.jpg 1x, ./img/photo-drumset-desktop@2x.jpg 2x">
+                    <source media="(min-width:660px)" srcset="./img/photo-drumset-tablet@1x.jpg 1x, ./img/photo-drumset-tablet@2x.jpg 2x">
+                    <img src="img/photo-drumset-mobile@1x.jpg" srcset="./img/photo-drumset-mobile@2x.jpg 2x" class="gallery__photo" alt="Фотография пользователя 2">
+                  </picture>
                 </a>
                 <figcaption class="gallery__description">
                   <p class="gallery__title">
@@ -178,7 +191,11 @@
             <li class="gallery__item">
               <figure class="gallery__figure">
                 <a href="#" class="gallery__link">
-                  <img src="img/photo-window-mobile@1x.jpg" class="gallery__photo" width="280" height="180" alt="Фотография пользователя 3">
+                  <picture>
+                    <source media="(min-width:960px)" srcset="./img/photo-window-desktop@1x.jpg 1x, ./img/photo-window-desktop@2x.jpg 2x">
+                    <source media="(min-width:660px)" srcset="./img/photo-window-tablet@1x.jpg 1x, ./img/photo-window-tablet@2x.jpg 2x">
+                    <img src="img/photo-window-mobile@1x.jpg" srcset="./img/photo-window-mobile@2x.jpg 2x" class="gallery__photo" alt="Фотография пользователя 3">
+                  </picture>
                 </a>
                 <figcaption class="gallery__description">
                   <p class="gallery__title">
@@ -202,7 +219,11 @@
             <li class="gallery__item">
               <figure class="gallery__figure">
                 <a href="#" class="gallery__link">
-                  <img src="img/photo-fair-mobile@1x.jpg" class="gallery__photo" width="280" height="180" alt="Фотография пользователя 4">
+                  <picture>
+                    <source media="(min-width:960px)" srcset="./img/photo-fair-desktop@1x.jpg 1x, ./img/photo-fair-desktop@2x.jpg 2x">
+                    <source media="(min-width:660px)" srcset="./img/photo-fair-tablet@1x.jpg 1x, ./img/photo-fair-tablet@2x.jpg 2x">
+                    <img src="img/photo-fair-mobile@1x.jpg" srcset="./img/photo-fair-mobile@2x.jpg 2x" class="gallery__photo" alt="Фотография пользователя 4">
+                  </picture>
                 </a>
                 <figcaption class="gallery__description">
                   <p class="gallery__title">
@@ -226,7 +247,11 @@
             <li class="gallery__item">
               <figure class="gallery__figure">
                 <a href="#" class="gallery__link">
-                  <img src="img/photo-pov-mobile@1x.jpg" class="gallery__photo" width="280" height="180" alt="Фотография пользователя 5">
+                  <picture>
+                    <source media="(min-width:960px)" srcset="./img/photo-pov-desktop@1x.jpg 1x, ./img/photo-pov-desktop@2x.jpg 2x">
+                    <source media="(min-width:660px)" srcset="./img/photo-pov-tablet@1x.jpg 1x, ./img/photo-pov-tablet@2x.jpg 2x">
+                    <img src="img/photo-pov-mobile@1x.jpg" srcset="./img/photo-pov-mobile@2x.jpg 2x" class="gallery__photo" alt="Фотография пользователя 5">
+                  </picture>
                 </a>
                 <figcaption class="gallery__description">
                   <p class="gallery__title">
@@ -250,7 +275,11 @@
             <li class="gallery__item">
               <figure class="gallery__figure">
                 <a href="#" class="gallery__link">
-                  <img src="img/photo-wing-mobile@1x.jpg" class="gallery__photo" width="280" height="180" alt="Фотография пользователя 6">
+                  <picture>
+                    <source media="(min-width:960px)" srcset="./img/photo-wing-desktop@1x.jpg 1x, ./img/photo-wing-desktop@2x.jpg 2x">
+                    <source media="(min-width:660px)" srcset="./img/photo-wing-tablet@1x.jpg 1x, ./img/photo-wing-tablet@2x.jpg 2x">
+                    <img src="img/photo-wing-mobile@1x.jpg" srcset="./img/photo-wing-mobile@2x.jpg 2x" class="gallery__photo" alt="Фотография пользователя 6">
+                  </picture>
                 </a>
                 <figcaption class="gallery__description">
                   <p class="gallery__title">
