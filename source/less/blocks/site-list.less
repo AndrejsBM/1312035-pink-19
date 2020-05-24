@@ -44,6 +44,7 @@
 
 @media (min-width: @desktop-width) {
   .site-list__item {
+    margin-right: 80px;
     padding-top: 15px;
     padding-bottom: 15px;
     width: auto;
@@ -58,10 +59,15 @@
     &:last-child::after {
       box-shadow: none;
     }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 
   .site-list__link {
     position: relative;
+    padding-top: 43px;
     padding-bottom: 8px;
     line-height: 18px;
     font-weight: 400;

@@ -2,21 +2,20 @@
   position: relative;
   margin: 0 auto;
   width: 320px;
-  min-height: 62px;
   z-index: 1;
+
+  &--inactive {
+    background-color: rgba(@black-text, 0.3);
+  }
+
+  &--acttive {
+    background-color: @blue-text;
+  }
 }
 
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
-}
-
-.page-header--inactive {
-  background-color: rgba(@black-text, 0.3);
-}
-
-.page-header--active {
-  background-color: @blue-text;
 }
 
 .page-header__logo svg {
@@ -76,19 +75,17 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    background-color: rgba(@black-text, 0.3);
     width: 100%;
   }
+
 
   .page-header__wrapper {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 940px;
-    min-height: 108px;
   }
 
   .page-header__mobile,
