@@ -5,11 +5,6 @@
   background-color: @white-bg;
 }
 
-.application-radio__input {
-  display: none;
-  pointer-events: none;
-}
-
 .application-radio__input:checked + .application-radio__label::after {
   content: "";
   position: absolute;
@@ -53,7 +48,7 @@
   .application-radio {
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 54px;
+    margin-bottom: 65px;
     padding-bottom: 59px;
     width: auto;
     border: 2px solid @grey-light;
@@ -75,6 +70,7 @@
 @media (min-width: @desktop-width) {
   .application-radio {
     margin: 0;
+    margin-top: 11px;
     padding-bottom: 0;
     min-width: 432px;
   }
