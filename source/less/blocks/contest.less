@@ -142,12 +142,33 @@
   .contest__legend {
     padding: 0;
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: -14px;
+    width: 320px;
     display: block;
     text-transform: uppercase;
     color: @pink-text;
+    background-color: @white-text;
     text-align: center;
+
+    &--achievements {
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 373px;
+    }
+
+    &--emotions {
+      width: 185px;
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+
+    &--info {
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 200px;
+    }
   }
 
   .contest__apllication-item {
@@ -176,8 +197,8 @@
   }
 
   .contest__required-fields {
-    padding-top: 6px;
-    padding-right: 18px;
+    padding-top: 2px;
+    padding-right: 19px;
   }
 
   .contest__required-label-hidden {
@@ -207,6 +228,10 @@
     padding-top: 46px;
     padding-left: 65px;
 
+    &:first-child {
+      padding-top: 47px;
+    }
+
     &:last-child {
       padding-top: 43px;
       padding-bottom: 60px;
@@ -215,14 +240,25 @@
 
   .contest__legend {
     margin: 0 auto;
+    margin-top: -14px;
     white-space: normal;
     padding: 0;
     padding-left: 31px;
     padding-right: 31px;
+
+    &--travel {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    &--emotions {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
   }
 
   .contest__footer {
-    margin-top: 64px;
+    margin-top: 66px;
     justify-content: space-between;
     align-items: center;
     width: 940px;

@@ -20,8 +20,8 @@
     </div>
     <header class="page-header page-header--inactive page-header--nojs">
       <div class="page-header__wrapper">
-        <a href="index.html" class="page-header__logo">
-          <svg viewBox="0 0 146.3 40.375" width="147" height="42">
+        <a href="index.html" class="page-header__logo" aria-label="Ссылка на главную страницу в виде логотипа Пинк">
+          <svg viewBox="0 0 146.3 40.375" width="147" height="42" aria-label="Логотип приложения Пинк">
             <g class="page-header__mobile">
               <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
               <path d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
@@ -109,8 +109,8 @@
           <span class="contest__text-hidden">Пожалуйста, заполните форму ниже:</span>
         </p>
         <form class="contest__form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="contest__item user-info">
-            <legend class="visually-hidden">Информация об участнике</legend>
+          <div class="contest__item user-info">
+            <p class="visually-hidden">Информация об участнике</p>
             <p class="user-info__item">
               <label class="user-info__label" for="user-surname">Фамилия:</label>
               <input class="user-info__input" type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию *" required>
@@ -123,9 +123,9 @@
               <label class="user-info__label" for="user-secondname">Отчество:</label>
               <input class="user-info__input" type="text" name="user-secondname" id="user-secondname" placeholder="Ну и отчество тоже">
             </p>
-          </fieldset>
-          <fieldset class="contest__item achievements">
-            <legend class="contest__legend contest__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
+          </div>
+          <div class="contest__item achievements">
+            <p class="contest__legend contest__legend--achievements">Ваши безбашенные достижения в путешествии</p>
             <p class="contest__label contest__label--centered">
               Ваши безбашенные достижения в путешествии
             </p>
@@ -179,9 +179,9 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="contest__item user-contacts">
-            <legend class="contest__legend">Контактная информация</legend>
+          </div>
+          <div class="contest__item user-contacts">
+            <p class="contest__legend contest__legend--info">Контактная информация</p>
             <div class="user-contacts__wrapper">
               <div class="user-contacts__item user-contacts__item--phone">
                 <div class="user-contacts__icon">
@@ -202,9 +202,9 @@
                 <input class="user-contacts__input" type="email" id="user-email" name="user-email" placeholder="Введите почту *" required>
               </div>
             </div>
-          </fieldset>
-          <fieldset class="contest__item application-radio">
-            <legend class="contest__legend">С каким приложением путешествовали?</legend>
+          </div>
+          <div class="contest__item application-radio">
+            <p class="contest__legend contest__legend--travel">С каким приложением путешествовали?</p>
             <p class="contest__label contest__label--centered">
               С каким приложением путешествовали?
             </p>
@@ -222,14 +222,14 @@
                 <label class="application-radio__label" for="application-value-3">Windows Phone</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="contest-item user-comment">
-            <legend class="contest__legend">Опишите свои эмоции</legend>
+          </div>
+          <div class="contest-item user-comment">
+            <p class="contest__legend contest__legend--emotions">Опишите свои эмоции</p>
             <p class="user-comment__item">
               <label for="comment-text" class="user-comment__label">Опишите свои эмоции</label>
               <textarea class="user-comment__input contest__comment-text" name="comment-text" id="comment-text" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="3" cols="26"></textarea>
             </p>
-          </fieldset>
+          </div>
           <div class="contest__footer">
             <p class="contest__btn-wrapper">
               <button type="submit" class="contest__button">Отправить форму</button>
@@ -283,6 +283,7 @@
           <ul class="socials__list">
             <li class="socials__item">
               <a class="socials__link" href="https://twitter.com/explore">
+                <span class="visually-hidden">Мы в Твиттере</span>
                 <svg class="socials__twitter-icon" width="18" height="14">
                   <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
@@ -290,6 +291,7 @@
             </li>
             <li class="socials__item">
               <a class="socials__link" href="https://www.facebook.com/">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
                 <svg class="socials__facebook-icon" width="9" height="18">
                   <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
@@ -297,6 +299,7 @@
             </li>
             <li class="socials__item">
               <a class="socials__link" href="https://www.youtube.com/">
+                <span class="visually-hidden">Канал Ютюб</span>
                 <svg class="socials__youtube-icon" width="15" height="14">
                   <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
