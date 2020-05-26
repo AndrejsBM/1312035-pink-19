@@ -53,15 +53,17 @@
     background-color: @white-text;
     border: 2px solid @grey-light;
   }
-
-  &:hover::before {
-    border: 2px solid @blue-text;
-  }
-
-  &:active::before {
-    border: 2px solid @pink-text;
-  }
 }
+
+.achievements__label:hover::before,
+.achievements__label:focus-within::before {
+  border-color: @blue-text;
+}
+
+.achievements__label:active::before {
+  border-color: @pink-text;
+}
+
 
 @media (min-width: @tablet-width) {
   .achievements {
