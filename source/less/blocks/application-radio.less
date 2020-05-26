@@ -36,12 +36,16 @@
   }
 }
 
-.application-radio__label:hover::before {
-  border: 2px solid @blue-text;
+.application-radio__input + .application-radio__label:hover::before,
+.application-radio__input:checked + .application-radio__label:hover::before,
+.application-radio__input:focus + .application-radio__label:before,
+.application-radio__input:focus:checked + .application-radio__label:before {
+  border-color: @blue-text;
 }
 
-.application-radio__label:active::before {
-  border: 2px solid @pink-text;
+.application-radio__input + .application-radio__label:active::before,
+.application-radio__input:checked + .application-radio__label:active::before {
+  border-color: @pink-text;
 }
 
 @media (min-width: @tablet-width) {
