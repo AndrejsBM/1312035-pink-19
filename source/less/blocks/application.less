@@ -35,7 +35,7 @@
   margin-bottom: 32px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   width: 210px;
 }
@@ -81,11 +81,13 @@
 }
 
 .application__control-btn {
+  margin: 0;
   padding: 0;
   width: 48px;
   height: 48px;
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .application__icon {
@@ -200,7 +202,7 @@
   .application__wrapper-buttons {
     padding: 0;
     margin: 0;
-    margin-top: 80px;
+    margin-top: 90px;
     margin-right: 55px;
     width: 260px;
     text-align: right;
@@ -217,6 +219,16 @@
     padding-left: 76px;
     padding-right: 82px;
     width: 260px;
+  }
+
+  .application__control-btn {
+    margin: 0;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 
   .application__icon--crop {
@@ -266,19 +278,11 @@
 
   .application__controls {
     margin: 0;
-    margin-top: 33px;
+    margin-top: 41px;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: flex-start;
     width: 14%;
-  }
-
-  .application__control-btn {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: auto;
   }
 
   .application__ranges {
@@ -296,18 +300,18 @@
   }
 
   .application__control-btn--crop {
-    margin-bottom: 26px;
+    margin-bottom: 48px;
   }
 
   .application__control-btn--fill {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .application {
     padding-bottom: 0;
-    margin-bottom: 61px;
+    margin-bottom: 58px;
     background-color: @white-text;
   }
 
@@ -340,11 +344,18 @@
   }
 
   .application__controls {
+    margin: 0;
+    padding: 0;
     margin-left: 5px;
-    margin-top: 53px;
-    margin-bottom: 59px;
+    margin-top: 58px;
+    margin-bottom: 75px;
     justify-content: center;
     align-items: flex-start;
+  }
+
+  .application__control-btn {
+    width: 50px;
+    width: 50px;
   }
 
   .application__icon--crop {
@@ -392,7 +403,7 @@
 
   .application__wrapper-buttons {
     margin: 0;
-    margin-top: 100px;
+    margin-top: 98px;
     margin-left: 79px;
     display: flex;
     justify-content: center;
